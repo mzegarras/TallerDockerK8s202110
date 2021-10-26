@@ -113,38 +113,14 @@ cd dir01
 2. Buscar cadenas de texto que contengan 5 (cat|grep)
 3. Pintar las 20 últimas líneas
 
-```bash
-cd /tmp
-for i in `seq 1 500`;do echo $i >> galaxy.log;done
-cat galaxy.log | grep 5
-tail -20 galaxy.log
-head -20 galaxy.log
-```
-
 ### Reto 02
 
 1. Crear los directorios ~/apps/app01/log
 2. Crear el archivo ~/apps/app01/log/server01.log
 3. Copiar el archivo ~/apps/app01/log/server01.log al profile
 
-```bash
-
-cd ~
-mkdir -p ./apps/app01/log
-cd ./apps/app01/log
-date > server01.log
-cp ./server01.log ~
-cp ./server01.log ~/server01-backup.log
-
-mkdir apps
-cd apps
-mkdir app01
-mkdir log
-cd ~
-cd ~/apps/app01/log
 
 
-```
 ### Remover contenido
 
 ```bash
