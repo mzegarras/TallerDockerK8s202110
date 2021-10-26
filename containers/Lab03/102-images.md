@@ -24,8 +24,3 @@
     ```bash
     docker rmi centos
     ``` 
-
-1. Acceder a repo privados
-    ```bash
-    ``` 
-    
