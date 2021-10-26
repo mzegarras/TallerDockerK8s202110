@@ -1,0 +1,8 @@
+FROM alpine
+
+ADD demo03.sh ./app.sh
+RUN chmod +x ./app.sh
+
+ENV NAME "Galaxy"
+ENV LAST_NAME "Training"
+ENTRYPOINT ./app.sh
