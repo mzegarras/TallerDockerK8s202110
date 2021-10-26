@@ -31,4 +31,4 @@ Temporary Items
 */jenkins_home
 *_labold
 
-.code-workspace
+*.code-workspace
