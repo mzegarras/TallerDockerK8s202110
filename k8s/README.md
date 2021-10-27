@@ -1,4 +1,4 @@
-# 3 Kubernetes
+# Kubernetes
 
 1. Problemas en producción
 1. Arquitectura de kubernetes
