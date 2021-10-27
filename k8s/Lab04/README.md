@@ -188,9 +188,6 @@
 
     kubectl expose deployment/web01 --port=9060 --target-port=80 --type=ClusterIP
 
-    
-    
-
     kubectl get svc
     kubectl describe svc/<<svcId>>
 
@@ -229,9 +226,6 @@
     kubectl config set-context --current --namespace=prd
 
     ```
-
-
-
 
 
 1. Expose service
