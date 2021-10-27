@@ -135,7 +135,7 @@
 
     docker run -p 8082:8080 \
         --name reactiveapi \
-        -v $PWD/application.yml:/application.yml \
+        -v ./application.yml:/application.yml \
         --net ms-net \
         -d reactivedemo:latest
     
@@ -152,12 +152,12 @@
 
     docker run \
         --name reactiveapi \
-        -v $PWD/application.yml:/application.yml \
+        -v ./application.yml:/application.yml \
         --net ms-net \
         -d reactivedemo:latest
     
     docker run --name proxyserver01 \
-        -v $PWD/nginx.conf:/etc/nginx/nginx.conf:ro \
+        -v ./nginx.conf:/etc/nginx/nginx.conf:ro \
         --net ms-net \
         -p 8083:9060 -d nginx
 
@@ -205,18 +205,18 @@
 
     docker run \
         --name reactiveapi01 \
-        -v $PWD/application.yml:/application.yml \
+        -v ./application.yml:/application.yml \
         --net ms02-net \
         -d reactivedemo:latest
 
     docker run \
         --name reactiveapi02 \
-        -v $PWD/application.yml:/application.yml \
+        -v ./application.yml:/application.yml \
         --net ms02-net \
         -d reactivedemo:latest
      
     docker run --name proxyserver02 \
-        -v $PWD/nginx.conf:/etc/nginx/nginx.conf:ro \
+        -v ./nginx.conf:/etc/nginx/nginx.conf:ro \
         --net ms02-net \
         -p 9083:9060 -d nginx
 
