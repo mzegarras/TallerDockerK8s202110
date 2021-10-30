@@ -75,7 +75,7 @@
 
     ```bash
     docker build -t web01 .
-    docker run -p 8080:8085 web01
+    docker run -p 8080:80 web01
     ```
 
 * Lab web 2.0
