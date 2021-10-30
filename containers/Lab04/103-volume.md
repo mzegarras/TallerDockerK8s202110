@@ -16,9 +16,9 @@
     cd /usr/share/nginx/html
     lt -lt
 
-
+    echo $PWD
     cd /usr/local/Proyectos/Galaxy/DockerK8S-202009/Lab04
-    docker run -v ./resources:/usr/share/nginx/html -p 9060:80 nginx
+    docker run -v $PWD/resources:/usr/share/nginx/html -p 9060:80 nginx
     ``` 
     
 1. Volumes readOnly
@@ -44,7 +44,7 @@
 
 
     ```bash
-    docker run -v ./data:/data/db -d mongo
+    docker run -v $(pwd)/data:/data/db -d mongo
     docker exec -it d5396946ffa5 /bin/sh
     mongo
     show dbs
@@ -60,7 +60,7 @@
 1. Mysql Volume
     ```bash
     docker run -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=ventas -d mysql:8.0
-    docker run -v ./data2:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=ventas -d mysql:8.0
+    docker run -v $(PWD)/data2:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=ventas -d mysql:8.0
 
     use ventas;
     CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20),species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
