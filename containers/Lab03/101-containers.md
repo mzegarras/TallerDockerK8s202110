@@ -106,14 +106,14 @@
 
 1. Jenkins [Jenkins](https://hub.docker.com/_/jenkins)  
     ```bash
-    docker run -p 8080:8080 jenkins:alpine
+    docker run -p 8080:8080 jenkins:jenkins
     ```
 
 1. Microservice Clientes
     ```bash
     sudo docker login -u mzegarra
     docker run -d -p 8081:8080 mzegarra/msclientes:0.0.1
-    curl http://localhost:8080/customers
+    curl http://localhost:8081/customers
     ```
 
 1. Web LPSA
