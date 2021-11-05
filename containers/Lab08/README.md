@@ -152,12 +152,12 @@
 
     docker run \
         --name reactiveapi \
-        -v ./application.yml:/application.yml \
+        -v $(PWD)/application.yml:/application.yml \
         --net ms-net \
         -d reactivedemo:latest
     
     docker run --name proxyserver01 \
-        -v ./nginx.conf:/etc/nginx/nginx.conf:ro \
+        -v $(PWD)/nginx.conf:/etc/nginx/nginx.conf:ro \
         --net ms-net \
         -p 8083:9060 -d nginx
 

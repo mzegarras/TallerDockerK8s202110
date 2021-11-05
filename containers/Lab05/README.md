@@ -86,7 +86,7 @@
 * Java
     ```bash
     docker build -t java01 .
-    docker run -p 8080:8085 web01
+    docker run -p 8080:8085 java01
     ```
 
     ```bash
