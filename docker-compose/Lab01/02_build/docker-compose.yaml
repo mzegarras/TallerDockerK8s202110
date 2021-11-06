@@ -13,4 +13,4 @@ services:
       context: angular/
       dockerfile: ./Dockerfile
     ports:
-      - 8081:80      
+      - 8082:80 
