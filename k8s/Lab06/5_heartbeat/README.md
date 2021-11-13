@@ -11,7 +11,7 @@
     kubectl set image deployment/lab06apictactebus lab06apictacte=mzegarra/lab06busctacte:0.0.2
     
     kubectl apply -f ./5_heartbeat/demo02.yaml
-     ```
+    ```
 
 ## 2. livenessProbe
 
