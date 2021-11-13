@@ -1,16 +1,21 @@
 # Digital ocean
 
-## 1. Crear objetos
+## 1. Crear cluster
+1. Crear Proyecto: csonic-demo
+1. Clic en create
+1. Configurar cluster
+1. Descargar archivos de configuración y conexion
 
 
+## 2. Crear 
+1. Crear customers
+```bash
+kubectl --kubeconfig=k8s-kubeconfig.yaml get nodes
+kubectl --kubeconfig=k8s-kubeconfig.yaml get pods
+kubectl apply -f 1_deployment.yaml
+kubectl apply -f 2_service.yaml
 
-1: Crear Proyecto: csonic-demo
-1: Clic en create
-1: Configurar cluster
-1: Descargar archivos de configuración y conexion
-
-
-
+```
 
 
 ## 2 Tools
