@@ -238,8 +238,8 @@
 
 1. Ingress
     ```bash
-kubectl apply -f 05_lab06MockCtaAho.yaml
-kubectl apply -f 05_ingress_01.yaml
+    kubectl apply -f 05_lab06MockCtaAho.yaml
+    kubectl apply -f 05_ingress_01.yaml
     ```
 
 
