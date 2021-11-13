@@ -3,4 +3,4 @@
 
 ## 2. Arquitectura
 1. Diagramar la arquitectura
-![title](https://raw.githubusercontent.com/mzegarras/TallerK8S/main/Lab07/Arquitectura.png)
+![title](k8s-exposed-pod.png)
