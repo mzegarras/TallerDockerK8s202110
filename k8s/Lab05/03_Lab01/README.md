@@ -1,1 +1,0 @@
-Seleccionar una aplicación y publicarla en kubernetes.
