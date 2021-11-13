@@ -160,7 +160,6 @@
     #Retroceder a una Revisión específica
     kubectl rollout undo deployment/web02 --to-revision=2
     ```        
-
     
     #Ping desde el pod
     ping web01.default.svc.cluster.local

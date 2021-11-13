@@ -35,3 +35,7 @@
 
     kubectl apply -f 04_all_2_public.yaml
     kubectl apply -f 04_all_1_private.yaml
+    
+    #Ping desde el pod
+    ping web01.default.svc.cluster.local
+     ```
