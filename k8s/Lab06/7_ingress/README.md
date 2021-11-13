@@ -18,12 +18,8 @@
     lookupd -flushcache
     ```    
 
-
-
 ## 2 Tools
-1. [Stress tool](https://github.com/wg/wrk) - Stress tool]
-* open 100 connections using 100 threads
-* run the test for 5 minutes
+
 
 ## 3. Referencias
 
