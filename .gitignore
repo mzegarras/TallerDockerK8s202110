@@ -30,5 +30,6 @@ Temporary Items
 
 */jenkins_home
 *_labold
+*_soldraft
 
 *.code-workspace
