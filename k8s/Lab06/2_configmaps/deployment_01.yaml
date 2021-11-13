@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mscustomers01
+spec:
+  selector:
+    matchLabels:
+      app: msclientes
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: msclientes
+    spec:
+      containers:
+      - name: envar-demo-container
+        image: gcr.io/google-samples/node-hello:1.0
+        env:
+          - name: URL_WS_VAR
+            valueFrom:
+              configMapKeyRef:
+                name: app-config-01
+                key: URL_WS
+          - name: USER_VAR
+            valueFrom:
+              configMapKeyRef:
+                name: app-config-01
+                key: USER              
