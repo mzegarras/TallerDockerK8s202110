@@ -39,3 +39,10 @@
     #Ping desde el pod
     ping web01.default.svc.cluster.local
      ```
+
+1. Listar pods
+    ```bash
+    kubectl get pods -l app=web01
+    kubectl get svc -l app=web01
+    kubectl delete pods -l app=web01
+    ```     
