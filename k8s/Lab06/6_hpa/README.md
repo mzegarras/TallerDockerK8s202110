@@ -5,6 +5,7 @@
 ```
 kubectl delete -f ./6_hpa/demo01.yaml
 kubectl apply -f ./6_hpa/demo01.yaml
+kubectl apply -f ./6_hpa/hpa01.yaml
 
 
 
