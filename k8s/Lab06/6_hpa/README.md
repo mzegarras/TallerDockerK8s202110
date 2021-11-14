@@ -1,10 +1,18 @@
 # HPA
 
+## 1. Consultar Apis
+
+```
+kubectl api-versions
+```
+
+* autoscaling/v1
+* autoscaling/v2beta1
+* autoscaling/v2beta2
+
 ## 1. hpa
 
 ```
-
-kubectl delete -f ./6_hpa/demo01.yaml
 kubectl apply -f ./6_hpa/demo01.yaml
 kubectl apply -f ./6_hpa/hpa01.yaml
 
