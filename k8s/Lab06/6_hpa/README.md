@@ -10,6 +10,8 @@ kubectl api-versions
 * autoscaling/v2beta1
 * autoscaling/v2beta2
 
+
+
 ## 1. hpa
 
 ```
@@ -22,11 +24,26 @@ kubectl autoscale deployment lab06apictactebus --min=2 --max=5 --cpu-percent=50
 
 ```
 
+## 1. Metrics
+
+```
+kubectl get pods --all-namespaces | grep metrics-server
+kubectl get svc --all-namespaces | grep metrics-server
+
+kubectl port-forward -n kube-system svc/metrics-server 8085:443
+
+kubectl get --raw /apis/metrics.k8s.io/v1beta1/nodes
+kubectl get --raw /apis/metrics.k8s.io/v1beta1/namespaces/default/pods/lab06apictactebus-6b897c4f86-kz9jd
+
+
+```
+
+
 ## 1. Scripts de carga
 ```
 
 
-kubectl run -i --tty stress-pod --rm  --image=loadimpact/loadgentest-wrk --restart=Never -- -c 400 -t 400 -d 1m http://lab06apictacte:7071/accounts/2013
+kubectl run -i --tty stress-pod --rm  --image=loadimpact/loadgentest-wrk --restart=Never -- -c 400 -t 400 -d 1m http://lab06apictactebus:7071/accounts/2013
 
 kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://lab06apictacte:7071/accounts/2013; done"
 
@@ -45,5 +62,3 @@ kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin
 ## 2 Tools
 
 1. [Stress tool](https://github.com/wg/wrk) - Stress tool
-* open 100 connections using 100 threads
-* run the test for 5 minutes
