@@ -32,7 +32,10 @@ kubectl get svc --all-namespaces | grep metrics-server
 
 kubectl port-forward -n kube-system svc/metrics-server 8085:443
 
+kubectl get --raw /apis/metrics.k8s.io/v1beta1
 kubectl get --raw /apis/metrics.k8s.io/v1beta1/nodes
+kubectl get --raw /apis/metrics.k8s.io/v1beta1/nodes
+
 kubectl get --raw /apis/metrics.k8s.io/v1beta1/namespaces/default/pods/lab06apictactebus-6b897c4f86-kz9jd
 
 
