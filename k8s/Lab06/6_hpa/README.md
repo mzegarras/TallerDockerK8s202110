@@ -12,7 +12,7 @@ kubectl api-versions
 
 
 
-## 1. hpa
+## 2. hpa
 
 ```
 kubectl apply -f ./6_hpa/demo01.yaml
@@ -24,7 +24,7 @@ kubectl autoscale deployment lab06apictactebus --min=2 --max=5 --cpu-percent=50
 
 ```
 
-## 1. Metrics
+## 3. Metrics
 
 ```
 kubectl get pods --all-namespaces | grep metrics-server
@@ -34,7 +34,7 @@ kubectl port-forward -n kube-system svc/metrics-server 8085:443
 
 kubectl get --raw /apis/metrics.k8s.io/v1beta1
 kubectl get --raw /apis/metrics.k8s.io/v1beta1/nodes
-kubectl get --raw /apis/metrics.k8s.io/v1beta1/nodes
+kubectl get --raw /apis/metrics.k8s.io/v1beta1/pods
 
 kubectl get --raw /apis/metrics.k8s.io/v1beta1/namespaces/default/pods/lab06apictactebus-6b897c4f86-kz9jd
 
@@ -42,7 +42,7 @@ kubectl get --raw /apis/metrics.k8s.io/v1beta1/namespaces/default/pods/lab06apic
 ```
 
 
-## 1. Scripts de carga
+## 4. Scripts de carga
 ```
 
 
