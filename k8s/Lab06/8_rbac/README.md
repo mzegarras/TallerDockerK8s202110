@@ -34,4 +34,6 @@
     kubectl config set-context sa-app01-reader --cluster=gke_galaxy-devops-331819_us-central1-c_cluster-1 --user=sa-app01
     kubectl config get-contexts
     kubectl config use-context  sa-app01-reader
+    kubectl config get-contexts
+    kubectl config use-context  gke_galaxy-devops-331819_us-central1-c_cluster-1
      ```
