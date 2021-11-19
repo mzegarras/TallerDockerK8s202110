@@ -15,7 +15,7 @@
 
 1. Crear service account
     ```
-    kubectl apply -f 1_podrole.yaml
+    kubectl apply -f 1_role.yaml
     ```
 
 1. Obtener token de service account
@@ -31,9 +31,9 @@
     kubectl config get-contexts
     kubectl config set-credentials sa-app01 --token=$TOKEN
     kubectl config get-contexts
-    kubectl config set-context sa-app01-reader --cluster=gke_galaxy-devops-331819_us-central1-c_cluster-1 --user=sa-app01
+    kubectl config set-context sa-app01-reader-v2 --cluster=gke_odybank_us-central1-c_cluster-1 --user=sa-app01
     kubectl config get-contexts
-    kubectl config use-context  sa-app01-reader
+    kubectl config use-context  sa-app01-reader-v2
     kubectl config get-contexts
     kubectl config use-context  gke_galaxy-devops-331819_us-central1-c_cluster-1
      ```

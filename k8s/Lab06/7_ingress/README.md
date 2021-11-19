@@ -10,8 +10,8 @@
 
     curl http://35.227.208.89/accounts/2013
 
-    curl -H "Host: lab06apictacte.pe" http://34.111.54.176/accounts/2013
-    curl -H "Host: lab06apictactev2.pe" http://34.111.54.176/accounts/2013
+    curl -H "Host: lab06apictacte.pe" http://35.227.208.89/accounts/2013
+    curl -H "Host: lab06apictactev2.pe" http://35.227.208.89/accounts/2013
     
     sudo vi /etc/hosts
     dscacheutil -flushcache
