@@ -100,7 +100,7 @@
         </dependency>
 
     ```
-1. En el poml.xml, en la sección dependencies agregar:
+1. En el poml.xml de modulo -api, en la sección dependencies agregar:
     ```xml  
     <dependencies>
             <dependency>
@@ -116,18 +116,18 @@
         </dependencies>
     ```
 1. En el poml.xml, del módulo -core agregar
-        ```xml  
-        <dependencies>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.neovisionaries</groupId>
-            <artifactId>nv-i18n</artifactId>
-        </dependency>
-        </dependencies>
-        ```
+    ```xml  
+    <dependencies>
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>com.neovisionaries</groupId>
+        <artifactId>nv-i18n</artifactId>
+    </dependency>
+    </dependencies>
+    ```
 1. En el pom.xml del módulo -api agregar
     ```xml  
         <build>
