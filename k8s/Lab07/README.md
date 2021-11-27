@@ -198,7 +198,7 @@
 
     ```bash
     curl -vvv --request POST \
-    --url http://35.245.223.179:8080/customers \
+    --url http://34.134.47.35:8080/customers \
     --header 'content-type: application/json' \
     --header 'user-agent: vscode-restclient' \
     --header 'x-api-force-sync: true' \
@@ -209,7 +209,7 @@
 
     ```bash
     curl -vvv --request POST \
-    --url http://35.245.223.179:8080/customers \
+    --url http://34.134.47.35:8080/customers \
     --header 'content-type: application/json' \
     --header 'user-agent: vscode-restclient' \
     --header 'x-api-force-sync: false' \

@@ -102,8 +102,3 @@
     kubectl expose deployment frontend --port=80 --target-port=8080 --type=LoadBalancer
     kubectl scale deployments frontend --replicas=3
     ```
-
-
-
-
-

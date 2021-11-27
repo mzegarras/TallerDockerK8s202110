@@ -1,5 +1,7 @@
 #credential
 credentials
+target
+.idea
 
 # General
 .DS_Store
