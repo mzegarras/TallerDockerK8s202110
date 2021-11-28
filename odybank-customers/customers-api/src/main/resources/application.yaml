@@ -1,0 +1,7 @@
+
+
+customers.mail:
+  server: server01
+  user: user01
+  password: password1
+  port: 9090

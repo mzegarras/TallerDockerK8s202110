@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  microservice:
+    image: "customers-api"
+    build:
+      context: customers-api/
+      dockerfile: ./src/main/docker/Dockerfile
+    ports:
+      - "8080:8080"
+  redis:
+    image: redis:4-alpine
+    command: sh -c 'echo "requirepass password" | redis-server -'
+    ports:
+      - "6379:6379"
+  bus:
+    image: "rabbitmq:3-management"
+    environment:
+      RABBITMQ_DEFAULT_USER: "rabbitmq"
+      RABBITMQ_DEFAULT_PASS: "rabbitmq"
+    ports:
+      - "15672:15672"
+      - "5672:5672"

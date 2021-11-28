@@ -8,19 +8,16 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   
-  <artifactId>customers-core</artifactId>
+  <artifactId>customers-repository</artifactId>
   
-  <name>customers-core</name>
+  <name>customers-repository</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-annotations</artifactId>
-      </dependency>
-      
-      <dependency>
-          <groupId>com.neovisionaries</groupId>
-          <artifactId>nv-i18n</artifactId>
-      </dependency>
-    </dependencies>
+   
+    <dependency>
+            <groupId>com.odybank</groupId>
+            <artifactId>customers-core</artifactId>
+        </dependency>
+        
+  </dependencies>
 </project>

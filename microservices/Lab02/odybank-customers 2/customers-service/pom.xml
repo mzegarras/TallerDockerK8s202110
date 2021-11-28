@@ -7,20 +7,20 @@
     <artifactId>odybank-customers</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
-  
-  <artifactId>customers-core</artifactId>
-  
-  <name>customers-core</name>
+
+  <artifactId>customers-service</artifactId>
+
+  <name>customers-service</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-annotations</artifactId>
+     <dependency>
+            <groupId>com.odybank</groupId>
+            <artifactId>customers-core</artifactId>
+        </dependency>
+        
+        <dependency>
+          <groupId>com.odybank</groupId>
+          <artifactId>customers-repository</artifactId>
       </dependency>
-      
-      <dependency>
-          <groupId>com.neovisionaries</groupId>
-          <artifactId>nv-i18n</artifactId>
-      </dependency>
-    </dependencies>
+  </dependencies>
 </project>
